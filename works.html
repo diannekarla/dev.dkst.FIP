@@ -40,30 +40,65 @@
                 <h4>Animals</h4>
             </section>
         </nav>
-                <nav aria-label="Contact Form in the Works page">
-                    <h3>Contact Kliks</h3>
-                    <section>
+        <!-- <nav class="contact-con">
+            <h2 class="contact-text"><i>Contact Kliks</i></h2>
+            <section>
+                <h3 class="hidden">Contact Form</h3>
+            <div class="contact-form">
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="fullName" type="text" placeholder="Full Name"><br>
+                   <input name="emailAddress" type="text" placeholder="Email Address"><br>
+                    <textarea name="msg" placeholder=Message/Comment></textarea><br>
+                    <input name="submit" type="submit" value="Submit">
+                </form>
+            </div>
+            </section>
+        </nav> -->
+        <footer>
+            <section class="footer-container">
+                <h2 class="contact-text txt-center"><i>Contact Kliks</i></h2>
+                <p class="txt-center">Have some questions? Let's start a conversarion!</p>
+                <br><br>
+                <div class="col-half">
+                    <div class="contact-con">
                         <h3 class="hidden">Contact Form</h3>
-                        <form action="email.php" method="POST" enctype="text/plain">
-                            <input name="fullName" type="text" placeholder="Full Name"><br>
-                           <input name="emailAddress" type="text" placeholder="Email Address"><br>
-                            <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                            <input name="submit" type="submit" value="Submit">
-                        </form>
-                    </section>
-                </nav>
-                <footer>
-                    <nav aria-label="Footer Navigation">
+                        <div class="contact-form">
+                            <form action="email.php" method="POST" enctype="text/plain">
+                                <input name="fullName" type="text" placeholder="Full Name" class="col-half">
+                                <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
+                                <textarea name="msg" placeholder=Message/Comment></textarea><br>
+                                <input name="submit" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <h2 class="hidden">Footer</h3>
+                <div class="col-30">
+                    <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
+                </div>
+                <div class="col-30">
+                    <nav class="footer-nav">
                         <h3 class="hidden">Footer Navigation</h3>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Works</li>
-                            <li>Journal</li>
-                            <li>Contact</li>
+                        <ul class="footer-nav-ul">
+                            <li></li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><b><a href="">Works</a></b></li>
+                            <li><a href="">Journal</a></li>
+                            <li><a href="">Contact</a></li>
                         </ul>
-                     </nav>
-                </footer>
+                    </nav>
+                </div>
+                <div class="col-30">
+                    <p>All Rights Reserved. Privacy Statement</p>
+                </div>
+                
+            </section>
+        </footer>
         </main>
 </body>
 </html>
