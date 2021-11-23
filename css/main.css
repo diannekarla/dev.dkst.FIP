@@ -1,3 +1,439 @@
+
+/* --------------------------------- Generic CSS --------------------------------- */
+
 .hidden {
     display: none;
+}
+
+ @font-face {
+    font-family: "banner-main-font";
+    src: url("../assets/PlaylistScript.otf");
+  }
+
+ body {
+     font-family: "Open sans", sans-serif;
+}
+
+a:visited {
+   color:rgb(66, 65, 65);
+}
+
+
+.col-half{
+   display: inline-block;
+   width: 49%;
+   vertical-align: middle;
+}
+
+.col-30{
+   display: inline-block;
+   width: 32%;
+   vertical-align: middle;
+}
+
+
+.txt-center{
+   text-align: center;
+}
+
+/* --------------------------------- Header --------------------------------- */
+
+.logo-con {
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    margin-left: 3em;
+}
+
+ .logo-img {
+    padding-top: 1em;
+    padding-left: 1em;
+    width: 150px;
+    height: 90px;
+}
+
+ .header-nav {
+   
+    display: inline-block;
+    width: 80%;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+ .header-nav-ul {
+    float: right;
+}
+
+ .header-nav-ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+footer{
+   margin-top: 10%;
+}
+
+.contact-con {
+   padding: 20px 40px;
+   vertical-align: top;
+   padding-bottom: 40px;
+}
+
+.contact-text {
+   letter-spacing: .25em;
+   margin-top: 2em;
+   font-family: 'banner-main-font';
+   font-size: 1.9em;
+}
+textarea {
+   width: 100%;
+   height: 200px;
+}
+
+input[type=text], select, textarea {
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-bottom: 16px;
+   font-family: inherit;
+}
+   
+input[type=submit] {
+   background-color:rgb(66, 65, 65);
+   color: white;
+   border: none;
+   border-radius: 4px;
+   padding: 20px 70px;
+}
+   
+input[type=submit]:hover {
+   background-color:lightgray;
+}
+
+.footer-container {
+   padding: 50px;
+   background-color: #e6e6e6;
+}
+
+.footer-bottom{
+   background-color: #cccccc;
+}
+
+.logo-footer-img {
+   margin: 50px 3em;
+   width: 150px;
+   height: 90px;
+}
+.footer-nav {
+   vertical-align: top;
+}
+
+.footer-nav-ul li {
+   display: inline-block;
+   margin-left: 20px;
+}
+
+
+/* --------------------------------- Homepage --------------------------------- */
+
+.banner-img-con {
+    width: 100%;
+    height: 700px;
+ }
+
+ .banner-text-main {
+    position: absolute;
+    font-family: "banner-main-font";
+    font-weight: normal;
+    font-size: 4em;
+    left: 80px;
+    bottom: 260px;
+    letter-spacing: .10em;
+ }
+
+ .banner-sub-text {
+    position: absolute;
+    left: 80px;
+    bottom: 280px;
+    letter-spacing: .10em;
+    font-size: 1.10em;
+ }
+
+ span {
+    color:rgba(0,0,0, .2)
+  }
+
+ .works-con {
+    width: 1400px;
+    height: 850px;
+    /*background-color: gray;*/
+ }
+
+ .works-title {
+    letter-spacing: .50em;
+    display: inline-block;
+    margin-left: 21em;
+    margin-top: 3em;
+    font-family: 'banner-main-font';
+    font-size: 1.9em;
+}
+
+ .portrait-con {
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin: 2.5em 60px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+}
+
+ .portrait-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .landscape-con{
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin-left: 560px;
+    margin-top: -324px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+ }
+
+ .landscape-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .travel-con{
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin-left: 1040px;
+    margin-top: -284px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+ }
+
+ .travel-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .events-con {
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin: 2.5em 60px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+}
+
+ .events-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .animals-con{
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin-left: 560px;
+    margin-top: -324px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+ }
+
+ .animals-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .iphone-con{
+    background-color: rgb(159, 159, 159);
+    width: 250px;
+    height: 250px;
+    margin-left: 1040px;
+    margin-top: -284px;
+    border: .05em solid rgb(66, 65, 65);
+    padding: 1em 2em;
+    border-radius: .50em;
+ }
+
+ .iphone-text {
+    color: white;
+    vertical-align: text-bottom;
+    text-align: center;
+    vertical-align: text-bottom;
+    background-color: rgba(0,0,0, .2);
+}
+
+ .featured-con {
+    width: 1400px;
+    height: 850px;
+    /*background-color: lightslategray*/
+}
+
+.featured-text {
+   letter-spacing: .25em;
+   display: inline-block;
+   margin-left: 18em;
+   margin-top: 5em;
+   font-family: 'banner-main-font';
+   font-size: 1.9em;
+}
+
+.featured-banner {
+   width: 100%;
+   height: 700px;
+}
+
+.journal-parent {
+   /* background-color:rgb(159, 159, 159); */
+   width: 1400px;
+   height: 850px;
+
+}
+
+.journal-text {
+   letter-spacing: .25em;
+   display: inline-block;
+   margin-left: 21em;
+   margin-top: 6em;
+   font-family: 'banner-main-font';
+   font-size: 1.9em;
+}
+
+.journal {
+   margin-top: 20px;
+   height: 250px;
+   width: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   align-content: center;
+   border-radius: .50em;
+}
+
+.journal-container{
+   display: inline-block;
+   margin-right: 100px;
+}
+
+.journal-container-01 {
+  margin-left: 430px;
+}
+
+
+.journal-01 {
+   background-image: url("../images/journal_one.jpeg");
+      /* width: 250px;
+      height: 250px;
+      margin-left: 15em;
+      margin-top: 1em;
+      border-radius: .50em; */
+}
+
+.journal-text-01 {
+   text-align: justify;
+   width: 240px;
+   height: 10px;
+   
+}
+
+.journal-02 {
+   background-image: url("../images/journal_two.jpeg");
+   /* width: 250px;
+   height: 250px;
+   margin-left: 52em;
+   margin-top: -48em;
+   border-radius: .50em; */
+}
+   
+
+.journal-text-02 {
+   text-align: justify;
+   width: 240px;
+   height: 10px;
+ 
+}
+
+
+/* --------------------------------- About Page --------------------------------- */
+
+
+.hello-there-text {
+   /* background-color: burlywood; */
+   font-family: "banner-main-font";
+   text-align: center;
+   font-size: 10em;
+   font-weight:100;
+   letter-spacing: .10em;
+}
+
+.hello-there-con {
+   width: 100%;
+   height: 210px;
+   margin-top: 100px;
+}
+
+.about-page-main-text {
+   text-decoration:rgb(77, 77, 77);
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.about-titles {
+   text-align: center;
+   font-size: 40px;
+   text-decoration:rgb(77, 77, 77);
+   font-weight: lighter;
+}
+
+.about-dianne-page {
+   background-color:wheat;
+   display: inline-block;
+   width: 100%;
+   height: 900px;
+}
+
+.meet-dianne-text {
+   height: 300px;
+   padding: 50px;
+   box-sizing: border-box;
+}
+
+.dianne-gallery {
+   background-color: #f7f7f7;
+   vertical-align: top;
+}
+
+.dianne-gallery img{
+   max-width: 31%;
 }
