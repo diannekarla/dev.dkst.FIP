@@ -1,4 +1,4 @@
-# Trabuco_Dianne_FIP
+Kliks Photography - Final Integrated Project
 
 TODO: Write a project description
 
