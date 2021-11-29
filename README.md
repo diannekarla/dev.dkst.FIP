@@ -1,4 +1,4 @@
-# Trabuco_Dianne_Midterm
+# Trabuco_Dianne_FIP
 
 TODO: Write a project description
 
