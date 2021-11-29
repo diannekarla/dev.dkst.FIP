@@ -6,131 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>
     <title>Welcome to Kliks Photograhy</title>
 </head>
-<body>
-    <h1 class="hidden">Welcome to Kliks Photography</h1>
-    <a class="hidden" href="#content">Skip to content</a>
-    <header>
-        <div class="logo-con">
-            <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
-       </div>
-        <nav class="header-nav" aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul class="header-nav-ul">
-                <li><b><a href="">Home</a></b></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Works</a></li>
-                <li><a href="">Journal</a></li>
-                 <li><a href="">Contact</a></li>
-            </ul>
+<body class="site homepage">
+    <h1 class="hidden">Welcome to Kliks!</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="head grid">
+        <div class="logo"> <a href="kliksphotography.com"> <img src="assets/logo/kliks_logo.jpg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a></div>
+        <nav class="nav gcol-3-2" aria-label="Main site navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <nav class="main-nav-container" aria-label="Main Navigation">
+                <h3 class="hidden">Main Navigation</h3>
+                <ul class="main-nav-ul">
+                    <li><b><a href="">Home</a></b></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
-    <main id="content">
-        <nav>
-        <h2 class="banner-text-main"> Welcome to <span>Kliks</span>!</h2>
-        <h4 class="banner-sub-text"><i>Photography. The smart choice.</i></h4>
-            <img src="images/homepage_banner.png" class="banner-img-con" alt="Forest in the middle of the water">
-        </nav>
-        <section>
-            <h2 class="hidden">Overview of the website</h2>
-            <br> <br>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
-           
+    
+    <main id="content" class="grid">
+        <section class="hero homepage-hero">
+            <div class="hero-img grid gcol-1-4">
+                <img class="gcol-1 grow-1" src="images/banner_homepage.jpg">
+                <div class="gcol-1 grow-1 banner-text homepage-text">
+                    <h2>Welcome to Kliks!</h2>
+                    <p>Photograhy. Design. You.</p>    
+                </div>
+            </div>
         </section>
-        <div class="works-con">
-            <h2 class="works-title"><i>Works</i></h2>
-            <div class="portrait-con"><h4 class="portrait-text">Portrait</h4></div>
-            <div class="landscape-con"><h4 class="landscape-text">Landscape</h4></div>
-            <div class="travel-con"><h4 class="travel-text">Travel</h4></div>
-            <div class="events-con"><h4 class="travel-text">Events</h4></div>
-            <div class="animals-con"><h4 class="travel-text">Animals</h4></div>
-            <div class="iphone-con"><h4 class="iphone-text">iPhone</h4></div>
-        </div>
-         <nav class ="featured-con">
-            <h2 class="featured-text"><i>Featured Photos</i></h2>
-            <section>
-                <h3 class="hidden">Compiled Photos to Display in the Homepage</h3>
-                <img src="images/featured_photos_homepage.jpg" class="featured-banner" alt="Port in Goderich">
-            </section>
-        </nav>
-        <nav class="journal-parent">
-            <h2 class="journal-text"><i>Journal</i></h2>
-            <section>
-                <h3 class="hidden">Overview for Journal</h3>
-            <div>
-                <div class="journal-container-01 journal-container">
-                    <div class="journal journal-01"></div>
-                    <p class="journal-text-01">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
-                </div>
-                <div class="journal-container">
-                    <div class="journal journal-02"></div>
-                    <p class="journal-text-02">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
-                </div>
-                <!-- <img src="images/journal_two.jpeg" class="journal-02" alt="Port in Goderich"> -->
+        <section class="about">
+            <div class="grid grid-column-3-inner">
+                <h2 class="hidden">Overview of the website</h2>
+                <p class="gcol-2">It is not only about photographing. It is the capacity to share one's feelings and convey a message to others. The name 'photography' technically refers to 'drawing with light,' the act of drawing. This is the website where I save all my photographs, which I wish to share with everyone. </p>
             </div>
-            </section>
-        </nav>
-        <!-- <nav class="contact-con">
-            <h2 class="contact-text"><i>Contact Kliks</i></h2>
-            <section>
+        </section>
+        <section class="works">
+            <h2 class="sections-title grid grow-1 gcol-2">Works</h2>
+            <div class="grid grid-column-3 work-items">
+                <div class="item portrait-img">
+                    <img src="images/thumbnail_portrait.jpg" alt="Portrait">
+                    <h4 class="work-title">Portrait</h4>
+                </div>
+                <div class="item landscape-img">
+                    <img src="images/thumbnail_landscape.jpg" alt="Portrait">
+                    <h4 class="work-title">Landscape</h4>
+                </div>
+                <div class="item travel-img">
+                    <img src="images/thumbnail_travel.jpg" alt="Portrait">
+                    <h4 class="work-title">Travel</h4>
+                </div>
+                <div class="item events-img">
+                    <img src="images/thumbnail_events.jpg" alt="Portrait">
+                    <h4 class="work-title">Events</h4>
+                </div>
+                <div class="item animals-img">
+                    <img src="images/thumbnail_animals.jpg" alt="Portrait">
+                    <h4 class="work-title">Animals</h4>
+                </div>
+                <div class="item iphone-img">
+                    <img src="images/thumbnail_iPhone.jpg" alt="Portrait">
+                    <h4 class="work-title">iPhone</h4>
+                </div>
+
+            </div>
+        </section>
+        <section class="featured-photos">
+            <h2 class="sections-title gcol-2">Featured Photos</h2>
+            <img src="images/featured_photo.jpg" class="featured-banner" alt="Port in Goderich">
+        </section>
+        <section class="featured-photos">
+            <div class="gcol-2 sections-title-container">
+                <h2 class="sections-title with-subtext">Recent Journals</h2>
+                <p>Every photo has a story to tell specially in my life for those pictures I took. Read a long with me as I attempt to capture all of the photographs that have had the greatest impact on my career as a photographer.</p>
+            </div>
+            <div class="gcol-2 grid journals">
+                <div class="journal-item">
+                    <img src="images/journal_photo1.jpg" alt="journal featured image">
+                    <div class="title">Fly High</div>
+                    <div class="date">August 8, 2021</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero assumenda blanditiis consectetur aperiam tempore porro dolore unde adipisci obcaecati quam, iste a sunt itaque inventore quae! Porro, consequuntur nemo.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo2.jpg" alt="journal featured image">
+                    <div class="title">New Life Begins Today</div>
+                    <div class="date">August 30, 2021</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero assumenda blanditiis consectetur aperiam tempore porro dolore unde adipisci obcaecati quam, iste a sunt itaque inventore quae! Porro, consequuntur nemo.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo3.jpg" alt="journal featured image">
+                    <div class="title">Experiencing Fall</div>
+                    <div class="date">September 7, 2021</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero assumenda blanditiis consectetur aperiam tempore porro dolore unde adipisci obcaecati quam, iste a sunt itaque inventore quae! Porro, consequuntur nemo.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="grid">
+        <section class="footer-upper">
+            <div class="sections-title-container grow-1 gcol-2">
+                <h2 class="sections-title with-subtext">Contact Kliks</h2>
+                <p class="section-title-subtext">Have some questions? Let's start a conversarion!</p>
+            </div>
+            <div class="grid gcol-2 grow-2 grid-column-2">
                 <h3 class="hidden">Contact Form</h3>
-            <div class="contact-form">
-                <form action="email.php" method="POST" enctype="text/plain">
-                    <input name="fullName" type="text" placeholder="Full Name"><br>
-                   <input name="emailAddress" type="text" placeholder="Email Address"><br>
-                    <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                    <input name="submit" type="submit" value="Submit">
-                </form>
-            </div>
-            </section>
-        </nav> -->
-        <footer>
-            <section class="footer-container">
-                <h2 class="contact-text txt-center"><i>Contact Kliks</i></h2>
-                <p class="txt-center">Have some questions? Let's start a conversarion!</p>
-                <br><br>
-                <div class="col-half">
-                    <div class="contact-con">
-                        <h3 class="hidden">Contact Form</h3>
-                        <div class="contact-form">
-                            <form action="email.php" method="POST" enctype="text/plain">
-                                <input name="fullName" type="text" placeholder="Full Name" class="col-half">
-                                <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
-                                <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                                <input name="submit" type="submit" value="Submit">
-                            </form>
+                <div class="contact-form">
+                    <form action="" method="POST" enctype="text/plain" class="grid grid-column-2">
+                        <input name="fullName" type="text" placeholder="Full Name" class="col-half">
+                        <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
+                        <div class="gcol-1-2">
+                            <textarea name="msg" rows="20" placeholder="Message / Comment"></textarea>
+                            <input name="submit" type="submit" value="Submit">
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="col-half">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </section>
+        <section class="grow-2 footer-bottom grid-column-3">
+            <h2 class="hidden">Footer</h3>
+            <div>
+                <a href="kliksphotography.com"> <img src="assets/logo/kliks_logo.jpg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
+            </div>
+            <nav class="main-nav-container">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul class="main-nav-ul footer-nav-ul">
+                    <li><b><a href="">Home</a></b></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="privacy-statement">
+                <div class="social-icons">
+                    <a href="/"><img src="assets/icons/fb_icon.jpg" alt="facebook icon"></a>
+                    <a href="/"><img src="assets/icons/ig_icon.jpg" alt="instagram icon"></a>
                 </div>
-            </section>
-            <section class="footer-bottom">
-                <h2 class="hidden">Footer</h3>
-                <div class="col-30">
-                    <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
-                </div>
-                <div class="col-30">
-                    <nav class="footer-nav">
-                        <h3 class="hidden">Footer Navigation</h3>
-                        <ul class="footer-nav-ul">
-                            <li><b><a href="">Home</a></b></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">Journal</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-30">
-                    <p>All Rights Reserved. Privacy Statement</p>
-                </div>
-                
-            </section>
-        </footer>
-        </main>
+                <p>All Rights Reserved. © 2021</p>
+            </div>
+            
+        </section>
+    </footer>
+    
 </body>
 </html>
