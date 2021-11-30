@@ -6,115 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>
     <title>Welcome to Kliks Photograhy</title>
 </head>
-<body>
-    <h1 class="hidden">Welcome to Kliks Photography</h1>
-    <a class="hidden" href="#content">Skip to content</a>
-    <header>
-        <div class="logo-con">
-            <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
-       </div>
-        <nav class="header-nav" aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul class="header-nav-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><b><a href="about.html">About</a></b></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                 <li><a href="contactus.html">Contact</a></li>
-            </ul>
+<body class="site homepage">
+    <h1 class="hidden">Welcome to Kliks!</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="head grid">
+        <div class="logo"> <a href="kliksphotography.com"> <img src="assets/logo/kliks_logo.jpg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a></div>
+        <nav class="nav gcol-3-2" aria-label="Main site navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <nav class="main-nav-container" aria-label="Main Navigation">
+                <h3 class="hidden">Main Navigation</h3>
+                <ul class="main-nav-ul">
+                    <li><b><a href="">Home</a></b></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
 
-    <main id="content">
-        <section>
-            <h2 class="hello-there-text hello-there-con"> Hello there!</h2>
+    <main id="content" class="main-about grid">
+        <section class="about-hero">
+            <h2 class="hello-there-text gcol-2"> Hello there!</h2>
         </section>
-        <section>
-            <h4 class="hidden">Text for "About" page</h4>
-            <p class="about-page-main-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+        <section class="about">
+            <div class="grid grid-column-3-inner">
+                <h4 class="hidden">Text for "About" page</h4>
+                <p class="gcol-2">Howdy! I hope you like your visit to my website. To help, you may read below about how I began my dream and how I came to be in this profession. This is fun. You will see how hard I worked to make this goal a reality. Let’s go!</p>
+            </div>
         </section>
-        <section aria-label="About Dianne">
+        <section aria-label="About Dianne" class="about-dianne">
             <h3 class="hidden">All about Dianne and Kliks</h3>
-            <div>
-                <div class="col-half">
-                    <h4 class="about-titles">Meet Dianne</h4>
-                    <p class="meet-dianne-text">Ut sem dui, blandit id ligula vel, rutrum cursus nisi. Aenean sodales nisl ac urna facilisis ultrices. In at euismod justo, sed ornare nibh. Morbi at posuere tortor. Pellentesque ut pellentesque nibh, eu auctor mi. Curabitur venenatis, metus nec fermentum tristique, lectus eros aliquet justo, id sollicitudin orci magna vitae nulla. Phasellus luctus luctus arcu, nec vehicula magna tempus sit amet. Fusce dui nibh, dapibus quis massa quis, vehicula consequat risus. Morbi semper tellus lectus, id mollis orci tempus at. Aliquam lobortis molestie ultricies. Nullam a congue risus. Fusce dignissim ligula sit amet tellus tempor, et eleifend metus mollis. Suspendisse potenti. Sed pretium varius pulvinar.</p>
+            <div class="grid gcol-2 grid-column-2">
+                <div class="gallery dianne-gallery">
+                    <div class="margin-right-5">
+                        <img src="images/about_me_photo1.jpg" alt="Dianne's pictures 01">    
+                        <img src="images/about_me_photo3.jpg" alt="Dianne's pictures 03">
+                    </div>
+                    <div class="margin-left-5">
+                        <img src="images/about_me_photo2.jpg" alt="Dianne's pictures 02">
+                        <img src="images/about_me_photo4.jpg" alt="Dianne's pictures 04">
+                    </div>
+                    
+                    <img src="images/about_me_photo5.jpg" class="gcol-1-2" alt="Dianne's pictures 05">
+                    
                 </div>
-                <div class="col-half dianne-gallery">
-                    <img src="assets/images/about1.jpg" alt="Dianne's pictures 01">
-                    <img src="assets/images/about2.jpg" alt="Dianne's pictures 02">
-                    <img src="assets/images/about3.jpg" alt="Dianne's pictures 03">
-                    <img src="assets/images/about4.jpg" alt="Dianne's pictures 04">
-                    <img src="assets/images/about5.jpg" alt="Dianne's pictures 05">
-                    <img src="assets/images/about6.jpg" alt="Dianne's pictures 06">
-                </div>
-            </div>
-            <br><br><br><br><br><br>
-            <div>
-                <div class="col-half dianne-gallery">
-                    <img src="assets/images/about1.jpg" alt="Dianne's pictures 01">
-                    <img src="assets/images/about2.jpg" alt="Dianne's pictures 02">
-                    <img src="assets/images/about3.jpg" alt="Dianne's pictures 03">
-                    <img src="assets/images/about4.jpg" alt="Dianne's pictures 04">
-                    <img src="assets/images/about5.jpg" alt="Dianne's pictures 05">
-                    <img src="assets/images/about6.jpg" alt="Dianne's pictures 06">
-                </div>
-                <div class="col-half">
-                    <h4 class="about-titles">About Kliks</h4>
-                    <p class="meet-dianne-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
-                </div>
-            </div>
-
-        </section>
-        <br><br><br><br>
-        <footer>
-            <section class="footer-container">
-                <h2 class="contact-text txt-center"><i>Contact Kliks</i></h2>
-                <p class="txt-center">Have some questions? Let's start a conversarion!</p>
-                <br><br>
-                <div class="col-half">
-                    <div class="contact-con">
-                        <h3 class="hidden">Contact Form</h3>
-                        <div class="contact-form">
-                            <form action="email.php" method="POST" enctype="text/plain">
-                                <input name="fullName" type="text" placeholder="Full Name" class="col-half">
-                                <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
-                                <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                                <input name="submit" type="submit" value="Submit">
-                            </form>
-                        </div>
+                <div class="about-me-text">
+                    <h2 class="sections-title">About Me</h2>
+                    <div class="meet-dianne-text">
+                        <p>Dianne – occasionally Karla, although I prefer to call as Dianne. I recall the first time I touched and used a DSLR camera. It is bulky. My first impression is that it is difficult to use and, of course, heavy to carry. However, my first attempt at photographing a flower makes me feel as though "I want this!" I recall a time when my partner and I clashed a lot because I did not inform her that I was going to get a DSLR immediately. And I purchased it using our funds. Naturally, I am afraid. However, my heart is content. I am content, and the argument is worthwhile.</p>
+                        <p>I applied as a freelance photographer. I have been so fortunate that I have chosen to become an official photographer for our community's league. It also joined an organisation where I am responsible for photographing, editing, compiling, and submitting images for use as a poster.</p>
+                        <p>But you know, it’s not the end of everything. I want to expand my knowledge in this industry. That’s why I am studying abroad taking up Interactive Media Design. I am not regretting anything right now. I feel like I am in the right part of my life.</p>
                     </div>
                 </div>
-                <div class="col-half">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-            <section class="footer-bottom">
-                <h2 class="hidden">Footer</h3>
-                <div class="col-30">
-                    <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
-                </div>
-                <div class="col-30">
-                    <nav class="footer-nav">
-                        <h3 class="hidden">Footer Navigation</h3>
-                        <ul class="footer-nav-ul">
-                            <li><a href="">Home</a></li>
-                            <li><b><a href="">About</a></b></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">Journal</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-30">
-                    <p>All Rights Reserved. Privacy Statement</p>
+            </div>
+        </section>
+        <section class="about-kliks">
+            <div class="grid grid-column-3-inner">
+                <div class="gcol-2 sections-title-container">
+                    <h2 class="sections-title with-subtext">About Kliks</h2>
+                    <p>Kliks Photography was founded in 2020 while I was considering how I am going to save all my raw and processed images. I am not looking to conceal them all. I want them to share and to know how nice it feels to have this type of passion. Be low are some of my shots. Please feel free to browse them.</p>
                 </div>
                 
-            </section>
-        </footer>
-        </main>
+            </div>
+            <div class="gcol-2">
+                <div class="grid grid-column-3 grid-column-3-large-mid gallery kliks-gallery">
+                    <div class="margin-right-5">
+                        <img src="images/about_klks_photo1.jpg" alt="Dianne's pictures 01">
+                        <img src="images/about_klks_photo6.jpg" alt="Dianne's pictures 06">
+                    </div>
+                    <div class="margin-right-5 margin-left-5">
+                        <div class="grid grid-column-2">
+                            <img src="images/about_klks_photo2.jpg" class="margin-right-5 " alt="Dianne's pictures 02">
+                            <img src="images/about_klks_photo4.jpg" class="margin-right-5 margin-left-5" alt="Dianne's pictures 04">
+                        </div>
+                        <img src="images/about_klks_photo5.jpg" alt="Dianne's pictures 05">
+                    </div>
+                    <img src="images/about_klks_photo3.jpg" class="margin-left-5" alt="Dianne's pictures 03">
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer class="grid">
+        <section class="footer-upper">
+            <div class="sections-title-container grow-1 gcol-2">
+                <h2 class="sections-title with-subtext">Contact Kliks</h2>
+                <p class="section-title-subtext">Have some questions? Let's start a conversarion!</p>
+            </div>
+            <div class="grid gcol-2 grow-2 grid-column-2">
+                <h3 class="hidden">Contact Form</h3>
+                <div class="contact-form">
+                    <form action="" method="POST" enctype="text/plain" class="grid grid-column-2">
+                        <input name="fullName" type="text" placeholder="Full Name" class="col-half">
+                        <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
+                        <div class="gcol-1-2">
+                            <textarea name="msg" rows="20" placeholder="Message / Comment"></textarea>
+                            <input name="submit" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </section>
+        <section class="grow-2 footer-bottom grid-column-3">
+            <h2 class="hidden">Footer</h3>
+            <div>
+                <a href="kliksphotography.com"> <img src="assets/logo/kliks_logo.jpg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
+            </div>
+            <nav class="main-nav-container">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul class="main-nav-ul footer-nav-ul">
+                    <li><b><a href="">Home</a></b></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="privacy-statement">
+                <div class="social-icons">
+                    <a href="/"><img src="assets/icons/fb_icon.jpg" alt="facebook icon"></a>
+                    <a href="/"><img src="assets/icons/ig_icon.jpg" alt="instagram icon"></a>
+                </div>
+                <p>All Rights Reserved. © 2021</p>
+            </div>
+            
+        </section>
+    </footer>
+    
 </body>
 </html>
