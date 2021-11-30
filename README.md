@@ -1,13 +1,6 @@
-# Trabuco_Dianne_FIP
+Kliks Photography - Final Integrated Project
 
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
-
-
-TODO: Write usage instructions
+This will be the structure of the website which will house all the photographs that I took from travel and events. It will also display portrait and landscape shoots as well.
 
 ## Contributing
 
@@ -20,7 +13,7 @@ TODO: Write usage instructions
 
 ## Credits
 
-TODO: Write credits
+* Prof Trev who patiently taught us and shared knowledge in a very detailed way
 
 ## License
 
