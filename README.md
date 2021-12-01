@@ -15,7 +15,7 @@ This will be the structure of the website which will house all the photographs t
 
 * Prof Trev who patiently taught us and shared knowledge in a very detailed way
 * Some links from FOL
-    * 30 seconds of code [a link](https://www.30secondsofcode.org/articles/s/css-units-cheatsheet)
+    * [30 seconds of code](https://www.30secondsofcode.org/articles/s/css-units-cheatsheet)
 
 ## License
 
