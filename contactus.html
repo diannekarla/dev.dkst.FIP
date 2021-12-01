@@ -5,55 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>
     <title>Welcome to Kliks Photograhy</title>
 </head>
-<body>
-    <h1 class="hidden">This is the Contact Us page</h1>
-       <a class="hidden" href="#content">Skip to content</a>
-    <header>
-        <nav aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Works</li>
-                <li>Journal</li>
-                <li>Contact</li>
-            </ul>
+<body class="site homepage">
+    <h1 class="hidden">Welcome to Kliks!</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="head grid">
+        <div class="logo"> <a href="kliksphotography.com"> <img src="assets/logo/kliks-logo.svg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a></div>
+        <nav class="nav gcol-3-2" aria-label="Main site navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <nav class="main-nav-container" aria-label="Main Navigation">
+                <h3 class="hidden">Main Navigation</h3>
+                <ul class="main-nav-ul">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="works.html" target="_blank">Works</a></li>
+                    <li><a href="journal.html" target="_blank">Journal</a></li>
+                    <li><b><a href="contactus.html">Contact</a></b></li>
+                </ul>
+            </nav>
         </nav>
     </header>
-    <main id="content">
-            <img src="images/contat_us_banner.png" alt="This is Contact Us banner" width = "800" height = "500">
-            <section>
-                <h3>Contact Us</h3>
-                <h4 class="hidden">Text for "Contact Us" page</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
-            </section>
-            <nav aria-label="Contact Form in the Journal page">
-                <h2><i>Contact Kliks</i></h2>
-                <section>
-                    <h3 class="hidden">Contact Form</h3>
-                    <form action="email.php" method="POST" enctype="text/plain">
-                        <input name="fullName" type="text" placeholder="Full Name"><br>
-                       <input name="emailAddress" type="text" placeholder="Email Address"><br>
-                        <textarea name="msg" placeholder=Message/Comment></textarea><br>
+    <main id="content" class="grid main-contactus">
+        <section class="hero works-hero grid-column-3">
+            <h4 class="hidden">Text for "Works" page</h4>
+            <div class="hero-img grid gcol-1-3">
+                <img class="gcol-1-3 grow-1" src="images/banner_contact.jpg">
+                <div class="gcol-2 grow-1 banner-text works-text">
+                    <h2 class="sections-title grid grow-1 gcol-2">Contact Me</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="hidden">Contact Us</h3>
+            <h4 class="hidden">Text for "Contact Us" page</h4>
+            <div class="sections-title-container gcol-2">
+                <p>We like to create things with fun. Email Kliks for any questions or inquiries. We would be happy to answer your questions and set up a meeting with you.</p>
+            </div>
+            <div class="grow-2 gcol-2 contact-form">
+                <form action="" method="POST" enctype="text/plain" class="grid grid-column-2">
+                    <input name="fullName" type="text" placeholder="Full Name" class="col-half">
+                    <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
+                    <div class="gcol-1-2">
+                        <textarea name="msg" rows="10" placeholder="Message / Comment"></textarea>
                         <input name="submit" type="submit" value="Submit">
-                    </form>
-                </section>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h3 class="hidden">Let's Meet</h3>
+            <div class="sections-title-container gcol-2">
+                <img src="assets/icons/pin_icon.png" alt="Let's Meet Icon" class="pin-icon">
+                <h2 class="sections-title with-subtext">Let's Meet</h2>
+                <p class="address-text">34 Covent Market Place <br> London Ontario</p>
+            </div>
+            <div class="grow-2 gcol-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+            </div>
+        </section>
+    </main>
+    <footer class="grid">
+        <section class="grow-2 footer-bottom grid-column-3">
+            <h2 class="hidden">Footer</h3>
+            <div>
+                <a href="kliksphotography.com"> <img src="assets/logo/kliks-logo.svg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
+            </div>
+            <nav class="main-nav-container">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul class="main-nav-ul footer-nav-ul">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="works.html" target="_blank">Works</a></li>
+                    <li><a href="journal.html" target="_blank">Journal</a></li>
+                    <li><b><a href="contactus.html">Contact</a></b></li>
+                </ul>
             </nav>
-            <footer>
-                <nav aria-label="Footer Navigation">
-                    <h3 class="hidden">Footer Navigation</h3>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Works</li>
-                        <li>Journal</li>
-                        <li>Contact</li>
-                    </ul>
-                    </nav>
-            </footer>
-        </main>
-     </body>
+            <div class="privacy-statement">
+                <div class="social-icons">
+                    <a href="/"><img src="assets/icons/fb_icon.jpg" alt="facebook icon"></a>
+                    <a href="/"><img src="assets/icons/ig_icon.jpg" alt="instagram icon"></a>
+                </div>
+                <p>All Rights Reserved. © 2021</p>
+            </div>
+        </section>
+    </footer>
+    
+</body>
 </html>
