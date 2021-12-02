@@ -5,99 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>
     <title>Welcome to Kliks Photograhy</title>
 </head>
-<body>
-    <h1 class="hidden">This is the Journal page</h1>
-       <a class="hidden" href="#content">Skip to content</a>
-    <header>
-        <nav aria-label="Main Navigation">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Works</li>
-                <li>Journal</li>
-                <li>Contact</li>
-            </ul>
+<body class="site homepage">
+    <h1 class="hidden">Welcome to Kliks!</h1>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="head grid">
+        <div class="logo"> <a href="kliksphotography.com"> <img src="assets/logo/kliks-logo.svg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a></div>
+        <nav class="nav gcol-3-2" aria-label="Main site navigation">
+            <h2 class="hidden">Main Navigation</h2>
+            <nav class="main-nav-container" aria-label="Main Navigation">
+                <h3 class="hidden">Main Navigation</h3>
+                <ul class="main-nav-ul">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="works.html" target="_blank">Works</a></li>
+                    <li><b><a href="journal.html">Journal</a></b></li>
+                    <li><a href="contactus.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
-    <main id="content">
-            <img src="#" alt="This is Journal's banner">
-            <section>
-                <h3>Journal</h3>
-                <h4 class="hidden">Text for "Journal" page</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
-            </section>
-            <nav aria-label="Display All Recent Journals">
-                <h2 class="hidden">Compilation of Recent Journals</h2>
-            <section>
-                <h4>Journal about Portrait</h4>
-                <h4>Journal about Landscape</h4>
-                <h4>Journal about Travel</h4>
-                <h4>Journal about Animals</h4>
-            </section>
-        </nav>
-        <!-- <nav class="contact-con">
-            <h2 class="contact-text"><i>Contact Kliks</i></h2>
-            <section>
-                <h3 class="hidden">Contact Form</h3>
-            <div class="contact-form">
-                <form action="email.php" method="POST" enctype="text/plain">
-                    <input name="fullName" type="text" placeholder="Full Name"><br>
-                   <input name="emailAddress" type="text" placeholder="Email Address"><br>
-                    <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                    <input name="submit" type="submit" value="Submit">
-                </form>
+    <main id="content" class="grid main-journal">
+            
+        <section class="hero works-hero grid-column-3">
+            <h4 class="hidden">Journal</h4>
+            <div class="hero-img grid gcol-1-3">
+                <img class="gcol-1-3 grow-1" src="images/banner_journal.jpg" alt="Banner for Journal page">
+                <div class="gcol-2 grow-1 banner-text works-text">
+                    <h2 class="sections-title grid grow-1 gcol-2">Journal</h2>
+                </div>
             </div>
-            </section>
-        </nav> -->
-        <footer>
-            <section class="footer-container">
-                <h2 class="contact-text txt-center"><i>Contact Kliks</i></h2>
-                <p class="txt-center">Have some questions? Let's start a conversarion!</p>
-                <br><br>
-                <div class="col-half">
-                    <div class="contact-con">
-                        <h3 class="hidden">Contact Form</h3>
-                        <div class="contact-form">
-                            <form action="email.php" method="POST" enctype="text/plain">
-                                <input name="fullName" type="text" placeholder="Full Name" class="col-half">
-                                <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
-                                <textarea name="msg" placeholder=Message/Comment></textarea><br>
-                                <input name="submit" type="submit" value="Submit">
-                            </form>
+        </section>
+        <section aria-label="Display All Recent Journals">
+            <h2 class="hidden">Compilation of Recent Journals</h2>
+            <div class="gcol-2 grid journals">
+                <div class="journal-item">
+                    <img src="images/journal_photo1.jpg" alt="journal featured image">
+                    <div class="title">Fly High</div>
+                    <div class="date">August 8, 2021</div>
+                    <div class="description">Our first day in Canada. Finally, my wish has been granted. I recall planning this dream with my partner, from gathering and completing all the requirements to selecting a school that fits me (i.e., one that offers my chosen program).</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo2.jpg" alt="journal featured image">
+                    <div class="title">New Life Begins Today</div>
+                    <div class="date">August 30, 2021</div>
+                    <div class="description">What is going to happen in our home? Monthly amortization is still required. What about our loved ones and friends? We will miss family and social events. However, life goes on. Even though you are fearful, you must take a chance.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo3.jpg" alt="journal featured image">
+                    <div class="title">Experiencing Fall</div>
+                    <div class="date">September 7, 2021</div>
+                    <div class="description">I shall have no regrets. I would not exchange it for anything. It is not easy, but I am confident that the effort will be worthwhile in the end. This journey has taught me a lot about myself. Continue to walk until you reach your destination.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo4.jpg" alt="journal featured image">
+                    <div class="title">Hello, Niagara Falls</div>
+                    <div class="date">Septembe 10, 2021</div>
+                    <div class="description">The famous waterfalls of Canada. I was not expecting to have the opportunity to capture a photo with my own camera of the view that I had only seen in the photograph. It was almost like a postcard view. The sensation is bizarre. Niagara Falls — you give me the most joy.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo5.jpg" alt="journal featured image">
+                    <div class="title">Victoria Park</div>
+                    <div class="date">October 15, 2021</div>
+                    <div class="description">I can practically claim that London is Canada's forest capital. The parks provide several benefits for families and friends looking to gather and bond. Additionally, squirrels and doves provide additional entertainment and satisfaction because of their attractiveness.</div>
+                </div>
+                <div class="journal-item">
+                    <img src="images/journal_photo6.jpg" alt="journal featured image">
+                    <div class="title">Flurries, Snowflakes</div>
+                    <div class="date">November 29, 2021</div>
+                    <div class="description">Is it only me who appreciates snow? I recall my first interaction with it being at a Ramen restaurant with my partner. Ramen and snow are a match made in heaven. Of course, I rolled a snowball. Plus singing the song from the movie “Frozen”. Let it snow (go). Let it snow (go). Let it snow (go).</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="grid">
+        <section class="footer-upper">
+            <div class="sections-title-container grow-1 gcol-2">
+                <h2 class="sections-title with-subtext">Contact Kliks</h2>
+                <p class="section-title-subtext">Have some questions? Let's start a conversation!</p>
+            </div>
+            <div class="grid gcol-2 grow-2 grid-column-2">
+                <h3 class="hidden">Contact Form</h3>
+                <div class="contact-form">
+                    <form action="contactform" method="POST" enctype="text/plain" class="grid grid-column-2">
+                        <input name="fullName" type="text" placeholder="Full Name" class="col-half">
+                        <input name="emailAddress" type="text" placeholder="Email Address" class="col-half">
+                        <div class="gcol-1-2">
+                            <textarea name="msg" rows="20" placeholder="Message / Comment"></textarea>
+                            <input name="submit" type="submit" value="Submit">
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="col-half">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562996848!2d-81.38870447590803!3d42.94879559486237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1636772631624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="grow-2 footer-bottom grid-column-3">
+            <h2 class="hidden">Footer</h2>
+            <div>
+                <a href="kliksphotography.com"> <img src="assets/logo/kliks-logo.svg" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
+            </div>
+            <nav class="main-nav-container">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul class="main-nav-ul footer-nav-ul">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="works.html" target="_blank">Works</a></li>
+                    <li><b><a href="journal.html" target="_blank">Journal</a></b></li>
+                    <li><a href="contactus.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="privacy-statement">
+                <div class="social-icons">
+                    <a href="/"><img src="assets/icons/fb_icon.jpg" alt="facebook icon"></a>
+                    <a href="/"><img src="assets/icons/ig_icon.jpg" alt="instagram icon"></a>
                 </div>
-            </section>
-            <section class="footer-bottom">
-                <h2 class="hidden">Footer</h3>
-                <div class="col-30">
-                    <a href="kliksphotography.com"> <img src="images/kliks-logo1.png" class="logo-img" alt="Logo of Kliks Photoraphy"> </a> 
-                </div>
-                <div class="col-30">
-                    <nav class="footer-nav">
-                        <h3 class="hidden">Footer Navigation</h3>
-                        <ul class="footer-nav-ul">
-                            <li><b><a href="">Home</a></b></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">Journal</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-30">
-                    <p>All Rights Reserved. Privacy Statement</p>
-                </div>
-                
-            </section>
-        </footer>
-        </main>
+                <p>All Rights Reserved. © 2021</p>
+            </div>
+        </section>
+    </footer>
+    
 </body>
 </html>

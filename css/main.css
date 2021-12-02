@@ -1,439 +1,752 @@
+/*
+Style Name: Site Build 
+Description: Final Integration Project
+Author: Dianne Karla Trabuco
+Version: 1.0
+Tags: Let's Build Something!
+*/
 
-/* --------------------------------- Generic CSS --------------------------------- */
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles
+       - Reset
+       - Global
+         - General
+         - Sections
+         - Floats
+         - Brand Colors
+         - Font Awesome                       
+    02. CSS Grid
+    03. Site Header
+       - Header
+       - Nav
+    04. Footer
+    05. Hero
+       - Image
+       - Title
+    06. Gallery
+    07. Contact Form
+    08. Hompage
+    09. About Page
+    10. Works Page
+    11. Contact Us Page
+    12. Journal Page
+                     
+/* _____________________________________
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+/* -------------
+  Reset
+-------------*/
+
+/* -------------
+  End Reset
+-------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #363636;
+    font-family: "Open sans", sans-serif;
+}
+
+
+/*-- Homepage - Custom BG --*/
+
+body.homepage {
+    background-image: url("../assets/bg-images/body_default.jpg")
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------
+Global
+-------------*/
+
+/*------------ General ------------*/
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
- @font-face {
-    font-family: "banner-main-font";
-    src: url("../assets/PlaylistScript.otf");
-  }
-
- body {
-     font-family: "Open sans", sans-serif;
+.margin-left-5{
+    margin-left: 5px;
 }
 
-a:visited {
-   color:rgb(66, 65, 65);
+.margin-right-5{
+    margin-right: 5px;
 }
 
-
-.col-half{
-   display: inline-block;
-   width: 49%;
-   vertical-align: middle;
+.padding-0{
+    padding: 0;
 }
 
-.col-30{
-   display: inline-block;
-   width: 32%;
-   vertical-align: middle;
-}
+/* .bold-nav-list {
+    font-family: "brand-font-bold" !important;
+} */
 
+/*-- Sections --*/
 
-.txt-center{
-   text-align: center;
-}
-
-/* --------------------------------- Header --------------------------------- */
-
-.logo-con {
-    display: inline-block;
-    width: 200px;
-    height: 130px;
-    margin-left: 3em;
-}
-
- .logo-img {
-    padding-top: 1em;
-    padding-left: 1em;
-    width: 150px;
-    height: 90px;
-}
-
- .header-nav {
-   
-    display: inline-block;
-    width: 80%;
-    height: 100px;
-    vertical-align: top;
-    margin-top: 30px;
-}
-
- .header-nav-ul {
-    float: right;
-}
-
- .header-nav-ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* --------------------------------- Footer --------------------------------- */
-
-footer{
-   margin-top: 10%;
-}
-
-.contact-con {
-   padding: 20px 40px;
-   vertical-align: top;
-   padding-bottom: 40px;
-}
-
-.contact-text {
-   letter-spacing: .25em;
-   margin-top: 2em;
-   font-family: 'banner-main-font';
-   font-size: 1.9em;
-}
-textarea {
-   width: 100%;
-   height: 200px;
-}
-
-input[type=text], select, textarea {
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-bottom: 16px;
-   font-family: inherit;
-}
-   
-input[type=submit] {
-   background-color:rgb(66, 65, 65);
-   color: white;
-   border: none;
-   border-radius: 4px;
-   padding: 20px 70px;
-}
-   
-input[type=submit]:hover {
-   background-color:lightgray;
-}
-
-.footer-container {
-   padding: 50px;
-   background-color: #e6e6e6;
-}
-
-.footer-bottom{
-   background-color: #cccccc;
-}
-
-.logo-footer-img {
-   margin: 50px 3em;
-   width: 150px;
-   height: 90px;
-}
-.footer-nav {
-   vertical-align: top;
-}
-
-.footer-nav-ul li {
-   display: inline-block;
-   margin-left: 20px;
-}
-
-
-/* --------------------------------- Homepage --------------------------------- */
-
-.banner-img-con {
-    width: 100%;
-    height: 700px;
- }
-
- .banner-text-main {
-    position: absolute;
-    font-family: "banner-main-font";
-    font-weight: normal;
-    font-size: 4em;
-    left: 80px;
-    bottom: 260px;
-    letter-spacing: .10em;
- }
-
- .banner-sub-text {
-    position: absolute;
-    left: 80px;
-    bottom: 280px;
-    letter-spacing: .10em;
-    font-size: 1.10em;
- }
-
- span {
-    color:rgba(0,0,0, .2)
-  }
-
- .works-con {
-    width: 1400px;
-    height: 850px;
-    /*background-color: gray;*/
- }
-
- .works-title {
-    letter-spacing: .50em;
-    display: inline-block;
-    margin-left: 21em;
-    margin-top: 3em;
-    font-family: 'banner-main-font';
-    font-size: 1.9em;
-}
-
- .portrait-con {
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin: 2.5em 60px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
-}
-
- .portrait-text {
-    color: white;
-    vertical-align: text-bottom;
+.sections-title-container{
+    padding: 5% 0;
     text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
 }
 
- .landscape-con{
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin-left: 560px;
-    margin-top: -324px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
- }
-
- .landscape-text {
-    color: white;
-    vertical-align: text-bottom;
+.sections-title{
     text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
+    padding: 5% 0px;
+    letter-spacing: .4em;
+    font-family: 'brand-font';
+    filter: drop-shadow(3px 2px 6px #fff);
+    color: #363636;
+    font-size: 3.5em;
 }
 
- .travel-con{
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin-left: 1040px;
-    margin-top: -284px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
- }
+.sections-title.with-subtext{
+    padding: 0;
+}
 
- .travel-text {
-    color: white;
-    vertical-align: text-bottom;
+.sections-title-container p{
+    font-family: "Open sans", sans-serif;
+    letter-spacing: normal;
     text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
+    font-size: 1.5em;
+    margin-top: 35px;
 }
 
- .events-con {
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin: 2.5em 60px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
+/*------------ End General ------------*/
+
+/*------------ Floats ------------*/
+
+/*------------ End Floats ------------*/
+
+/*------------ Brand Colours ------------*/
+
+
+/*------------ End Brand Colours ------------*/
+
+/*------------ Fonts ------------*/
+
+@font-face {
+    font-family: "brand-font";
+    src: url("../assets/fonts/PlaylistScript.otf");
 }
 
- .events-text {
-    color: white;
-    vertical-align: text-bottom;
-    text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
+/* @font-face {
+    font-family: "brand-font-regular";
+    src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
- .animals-con{
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin-left: 560px;
-    margin-top: -324px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
- }
+@font-face {
+    font-family: "brand-font-bold";
+    src: url("../assets/fonts/OpenSans-Bold.ttf");
+} */
 
- .animals-text {
-    color: white;
-    vertical-align: text-bottom;
-    text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
-}
+/*------------ End Fonts ------------*/
 
- .iphone-con{
-    background-color: rgb(159, 159, 159);
-    width: 250px;
-    height: 250px;
-    margin-left: 1040px;
-    margin-top: -284px;
-    border: .05em solid rgb(66, 65, 65);
-    padding: 1em 2em;
-    border-radius: .50em;
- }
+/* _____________________________________
 
- .iphone-text {
-    color: white;
-    vertical-align: text-bottom;
-    text-align: center;
-    vertical-align: text-bottom;
-    background-color: rgba(0,0,0, .2);
-}
+02. CSS Grid
+_____________________________________ */
 
- .featured-con {
-    width: 1400px;
-    height: 850px;
-    /*background-color: lightslategray*/
-}
+/*------------ Grid Items ------------*/
 
-.featured-text {
-   letter-spacing: .25em;
-   display: inline-block;
-   margin-left: 18em;
-   margin-top: 5em;
-   font-family: 'banner-main-font';
-   font-size: 1.9em;
-}
+@supports (grid-area: auto) {
 
-.featured-banner {
-   width: 100%;
-   height: 700px;
-}
+    .site {
+        max-width: none;
+    }
 
-.journal-parent {
-   /* background-color:rgb(159, 159, 159); */
-   width: 1400px;
-   height: 850px;
+    .grid, .grid > *{
+        display: grid;
+    }
 
-}
+    /*-- Register Grid Templates --*/
 
-.journal-text {
-   letter-spacing: .25em;
-   display: inline-block;
-   margin-left: 21em;
-   margin-top: 6em;
-   font-family: 'banner-main-font';
-   font-size: 1.9em;
-}
+    header{
+        grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
+    }
 
-.journal {
-   margin-top: 20px;
-   height: 250px;
-   width: 250px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   align-content: center;
-   border-radius: .50em;
-}
+    main > *, footer > * {
+        grid-template-columns: 1fr repeat(1, minmax(auto, 80em)) 1fr;
+    }
 
-.journal-container{
-   display: inline-block;
-   margin-right: 100px;
-}
+    .grid-column-2{
+        grid-template-columns: 1fr repeat(1, minmax(auto, 50%));
+    }
 
-.journal-container-01 {
-  margin-left: 430px;
-}
+    .grid-column-3{
+        grid-template-columns: 1fr repeat(1, minmax(auto, 33%)) 1fr;
+    }
+
+    .grid-column-3-inner{
+        grid-template-columns: 1fr repeat(1, minmax(auto, 80%)) 1fr;
+        grid-column: 2;
+    }
+
+    .grid-column-3-large-mid{
+        grid-template-columns: 1fr repeat(1, minmax(auto, 50%)) 1fr;
+    }
+
+    .grid-column-4{
+        grid-template-columns: 1fr repeat(2, minmax(auto, 15em)) 1fr;
+        gap: 6.7em;
+    }
+    
+    /*-- Register Grid Row --*/
+
+    .grow-1{
+        grid-row: 1;
+    }
+
+    .grow-2{
+        grid-row: 2;
+    }
+
+    /*-- Register Grid Column --*/
+
+    .gcol-1{
+        grid-column: 1;
+    }
+
+    .gcol-2{
+        grid-column: 2;
+        /* grid-column: 3; */
+    }
+
+    /*-- Register Grid Column & Span --*/
+
+    .gcol-1-2 {
+        grid-column: 1 / span 2;
+    }
+
+    .gcol-1-3 {
+        grid-column: 1 / span 3;
+    }
+
+    .gcol-1-4{
+        grid-column: 1 / span 4;
+    }
+
+    .gcol-2-2{
+        grid-column: 2 / span 2;
+    }
+
+    .gcol-2-3 {
+        grid-column: 2 / span 3;
+    }
+
+    .gcol-3-2 {
+        grid-column: 3 / span 2;
+    }
 
 
-.journal-01 {
-   background-image: url("../images/journal_one.jpeg");
-      /* width: 250px;
-      height: 250px;
-      margin-left: 15em;
-      margin-top: 1em;
-      border-radius: .50em; */
-}
+    /*------------ End Grid Items ------------*/
 
-.journal-text-01 {
-   text-align: justify;
-   width: 240px;
-   height: 10px;
-   
-}
 
-.journal-02 {
-   background-image: url("../images/journal_two.jpeg");
-   /* width: 250px;
-   height: 250px;
-   margin-left: 52em;
-   margin-top: -48em;
-   border-radius: .50em; */
-}
-   
+    /* _____________________________________
 
-.journal-text-02 {
-   text-align: justify;
-   width: 240px;
-   height: 10px;
+    03. Site Header
+    _____________________________________ */
+
+    .logo{
+        vertical-align: middle;
+        justify-content: space-evenly;
+        padding: 2% 0;
+    }
+
+    .logo-img {
+        width: 200px;
+    }
+
+
+    /*------------ Start Nav Styling ------------*/
+
+    .main-nav-container {
+        margin: auto 0;
+    }
+    
+    .main-nav-ul{
+        justify-content: space-evenly;
+        display: flex;
+        padding: 0;
+
+    }
+
+    .main-nav-ul li {
+        list-style: none;
+    }
+    
+    .main-nav-ul a {
+        text-decoration: none;
+        color: #363636;
+        /* font-family: "brand-font-regular"; */
+    }
+
+    /* .main-nav-ul b:active {
+        border-bottom: 3px solid #4a8497;
+    } */
+
+    .main-nav-ul a:hover {
+        border-bottom: 3px solid #4a8497;
+    }
+
+    .main-nav-ul b a{
+        color: #4a8497;
+    }
+
+    /*------------- End Site Header ------------*/
+
+    /* _____________________________________
+
+    04. Footer
+    _____________________________________ */
+
+    .footer-upper {
+        background-image: url("../assets/bg-images/footer_default.jpg");
+        background-size: cover;
+    }
+
+    .footer-upper{
+        padding-bottom: 8%;
+    }
+    
+    .footer-upper .grid-column-2{
+        gap: 2%;
+    }
+
+    .footer-bottom{
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    .social-icons{
+        padding-bottom: 15px;
+    }
+
+    .social-icons img{
+        padding-right: 20px;
+    }
+
+    .social-icons img:hover {
+        cursor: pointer;
+    }
+
+    /* _____________________________________
+
+    05. Hero
+    _____________________________________ */
+
+    .hero .banner-text{
+        align-self:  flex-start;
+        justify-self: start;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    /*-- Homepage --*/
+
+    .homepage-hero .hero-img .homepage-text {
+        color: whitesmoke;
+        margin: 12% 5% 0;
+    }
+
+    .homepage-hero .hero-img .homepage-text h2{
+        font-weight: normal;
+        font-size: 4.5em;
+        letter-spacing: .15em;
+        font-family: "brand-font";
+        filter: drop-shadow(4px 6px 6px #363636);
+    }
+
+    .homepage-hero .hero-img .homepage-text p{
+        letter-spacing: .10em;
+        font-size: 2em;
+        filter: drop-shadow(4px 6px 6px #363636);
+    }
+
+    .margin-p {
+        margin: 0 -80px 0 -80px !important;
+    }
+
+    /*-- About --*/
+
+    .about-hero{
+        min-height: 600px;
+    }
+    
+    .about-hero .hello-there-text {
+        font-family: "brand-font";
+        filter: drop-shadow(4px 6px 6px #fff);
+        color: #363636;
+        text-align: center;
+        font-size: 14em;
+        font-weight: 100;
+        letter-spacing: .10em;
+        margin: auto;
+        padding-top: 8%;
+     }
+
+    /*-- Works --*/
+
+    .works-hero{
+        padding-bottom: 5%;
+    }
+
+    .works-hero .works-text{
+        align-self:  flex-end !important;
+        justify-self: end !important;
+        background-image: url("../assets/bg-images/works_banner_text.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -55px;
+        padding: 0 40px 0 60px;
+        border-radius: 5px !important;
+    }
+  
+
+    /*------------ End Hero ------------*/
+
+
+    /* _____________________________________
+
+    06. Gallery
+    _____________________________________ */
+
+    /*-- About --*/
+
+    .gallery img{
+        margin-bottom: 8px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .dianne-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+
+    .kliks-gallery > img:last-child{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column: 3;
+        padding: 40% 0;
+    }
+
+    /*-- Works --*/
+
+    .works-gallery .main-image{
+        grid-row: 1;
+        margin: 3% 0 5%;
+    }
+
+    .works-gallery .arrow{
+        align-self: center;
+        grid-row: 1;
+        font-size: 8em;
+        z-index: 9;
+        font-weight: bold;
+    }
+
+    .works-gallery .arrow-left{
+        grid-column: 1;
+        justify-content: flex-start;
+        margin-left: 20%;
+    }
+
+    .works-gallery .arrow-right{
+        grid-column: 3;
+        justify-content: flex-end;
+        margin-right: 20%;
+    }
+
+    .works-gallery-thumbnails{
+        grid-row-start: 3;
+        padding-bottom: 8%;
+    }
+
+
+    /* _____________________________________
+
+    07. Contact Form
+    _____________________________________ */
+
+    /*-- Default Form - Footer --*/
+
+    .contact-form form {
+        gap: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    input[type=text], select, textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: inherit;
+    }
+        
+    input[type=submit] {
+        background-color:rgb(66, 65, 65);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 15px 80px;
+        margin-left: 411px;
+    }
+
+    input[type=text]::placeholder {
+        color: #636363;
+        opacity: 50%;
+    }
+
+    textarea::placeholder {
+        color: #636363;
+        opacity: 50%;
+    }
  
-}
+    input[type=submit]:hover {
+        background-color: #636363;
+    }
+
+    /*-- Contact Us Page --*/
+
+    .main-contactus .contact-form input, .main-contactus .contact-form textarea{
+        font-size: 1.5em;
+    }
+
+    .main-contactus .contact-form input {
+        margin-bottom: 15px;
+    }
+
+    .main-contactus .contact-form textarea {
+        margin-bottom: 30px;
+    }
+
+    .main-contactus .contact-form input[type=submit] {
+        padding: 15px 120px;
+        margin: 0 auto;
+    }
+
+    /* _____________________________________
+
+    08. Homepage
+    _____________________________________ */
+
+    .about{
+        font-size: 1.5em;
+        line-height: 1.5;
+        color: #4e4c4c;
+        text-align: center;
+        padding: 3% 0;
+    }
+
+    .work-items{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .work-items .item {
+        border-radius: .5em;
+        margin: 3%;
+        min-height: 320px;
+        grid-template-columns: 1fr;
+    }
+
+    .work-items .item img{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .work-items .item .work-title {
+        text-align: center;
+        color:#3c3c3c;
+        background-color: rgba(255,255,255, .5);
+        padding: 5px;
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 3em;
+        letter-spacing: 5px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .featured-photos{
+        padding-bottom: 0px !important;
+    }
+    
+    .featured-banner {
+        grid-column: 1 / span 3;
+        width: 100%
+    }
+
+    
+    /* _____________________________________
+
+    09. About Page
+    _____________________________________ */
+
+    .main-about{
+        background-image: url("../assets/bg-images/about_default.jpg");
+        background-size: cover;
+    }
+     
+    .about-me-text{
+        grid-auto-rows: minmax(min-content, max-content);
+    }
+    
+    .about-me-text .meet-dianne-text {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0 5%;
+        line-height: 1.8;
+    }
+
+    .about-me-text .meet-dianne-text p{
+        padding: 15px 0;
+    }
+
+    .about-dianne, .about-kliks{
+        padding: 6%;
+    }
+
+    .about-kliks{
+        padding-top: 0;
+    }
+    
+    /* _____________________________________
+
+    10. Works Page
+    _____________________________________ */
+
+    .works-category{
+        justify-content: center;
+    }
+
+    .works-category li {
+        font-size: 1.5em;
+        padding-right: 45px;
+        list-style: disc;
+    }
+
+    /* _____________________________________
+
+    11. Contact Us Page
+    _____________________________________ */
+
+    .main-contactus{
+        background-image: url("../assets/bg-images/contactus_default.jpg");
+        background-size: cover;
+        /* padding-bottom: 6%; */
+    }
+
+    .pin-icon{
+        width: 200px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .address-text{
+        font-size: 3.0em !important;
+        margin-top: 4%;
+        line-height: 1.3;
+    }
 
 
-/* --------------------------------- About Page --------------------------------- */
+    /* _____________________________________
 
+    12. Journal Page
+    _____________________________________ */
 
-.hello-there-text {
-   /* background-color: burlywood; */
-   font-family: "banner-main-font";
-   text-align: center;
-   font-size: 10em;
-   font-weight:100;
-   letter-spacing: .10em;
-}
+    .main-journal{
+        background-image: url("../assets/bg-images/journal_default.jpg");
+        background-size: cover;
+    }
 
-.hello-there-con {
-   width: 100%;
-   height: 210px;
-   margin-top: 100px;
-}
+    .journals{
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30%));
+        gap:5%;
+        padding: 6% 0 20%;
+    }
 
-.about-page-main-text {
-   text-decoration:rgb(77, 77, 77);
-   text-align: center;
-   margin-bottom: 100px;
-}
+    .journal-item{
+        line-height: 1.5;
+        margin-bottom: 2%;
+    }
 
-.about-titles {
-   text-align: center;
-   font-size: 40px;
-   text-decoration:rgb(77, 77, 77);
-   font-weight: lighter;
-}
+    .journal-item .title{
+        font-size: 2em;
+        font-weight: bold;
+    }
 
-.about-dianne-page {
-   background-color:wheat;
-   display: inline-block;
-   width: 100%;
-   height: 900px;
-}
-
-.meet-dianne-text {
-   height: 300px;
-   padding: 50px;
-   box-sizing: border-box;
-}
-
-.dianne-gallery {
-   background-color: #f7f7f7;
-   vertical-align: top;
-}
-
-.dianne-gallery img{
-   max-width: 31%;
+    .journal-item .date{
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .journal-item img{
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+  
+   
 }
