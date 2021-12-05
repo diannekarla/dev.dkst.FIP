@@ -333,17 +333,16 @@ _____________________________________ */
         /* font-family: "brand-font-regular"; */
     }
 
-    /* .main-nav-ul b:active {
+    .main-nav-ul li .active {
         border-bottom: 3px solid #4a8497;
-    } */
+        font-weight: bold;
+        color: #4a8497;
+    }
 
     .main-nav-ul a:hover {
         border-bottom: 3px solid #4a8497;
     }
 
-    .main-nav-ul b a{
-        color: #4a8497;
-    }
 
     /*------------- End Site Header ------------*/
 
