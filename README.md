@@ -1,4 +1,4 @@
-<h2> Kliks Photography - Final Integrated Project </h2>
+# Kliks Photography - Final Integrated Project
 
 This will be the structure of the website which will house all the photographs that I took from travel and events. It will also display portrait and landscape shoots as well.
 
